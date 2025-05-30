@@ -1,0 +1,209 @@
+:root {
+    --carbon: #1C1C1C;
+    --hueso: #FAFAF8;
+    --beige: #E6DED3;
+    --gris: #9B9B9B;
+    --dorado: #C5A880;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ececec;
+    color: var(--carbon);
+  }
+  
+  header {
+    background-color: var(--carbon);
+    color: var(--hueso);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    font-size: 1.5rem;
+
+  }
+  
+  .logo img{
+    width: 15rem;
+    margin-bottom: -5rem;
+    margin-top: -3rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4.5rem;
+  }
+  
+  nav a {
+    color: var(--hueso);
+    text-decoration: none;
+  }
+
+  
+  .hero {
+    background-color: var(--beige);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hero-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .carrusel{
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+  }
+  .carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  .carrusel img{
+    border-radius: 2rem;
+  }
+  .carrusel li{
+    width: 100%;
+    list-style: none;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: relative;
+  }
+  .texto{
+    position: absolute;
+    text-align: center;
+    padding:0 12rem;
+    top: 30rem;
+    color: #000000;
+  }
+  .explora{
+    font-family: 'Playfair Display', serif; 
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: -3rem;
+    
+  }
+  .estilo{
+    font-family: 'Playfair Display', serif; 
+    text-align: center;
+    font-size: 3rem;
+  }
+  .carrusel texto h2{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  .carrusel img{
+    width: 100%;
+  }
+  @keyframes slide {
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+    20% {margin-left:-100%;}
+    40% {margin-left:-100%;}
+    40% {margin-left:-200%;}
+    60% {margin-left:-200%;}
+    60% {margin-left:-300%;}
+    80% {margin-left:-300%;}
+
+  }
+  
+  .boton {
+    background-color: var(--carbon);
+    color: var(--hueso);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    
+  }
+  
+  .catalogo, .carrito {
+    padding: 2rem;
+  }
+  
+  .catalogo h2, .carrito h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filtros select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .productos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .producto {
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    border: 1px solid var(--gris);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .producto h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .producto button {
+    
+    background-color: var(--carbon);
+    color: var(--hueso);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  
+  footer {
+    background-color: var(--carbon);
+    color: var(--hueso);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .carrito-items {
+    font-family: 'Playfair Display', serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .carrito-item {
+    margin-bottom: 15px;
+  }
+  
+  .carrito-item p {
+    margin: 4px 0;
+  }
+  h1{
+    font-family: 'Playfair Display', serif;
+    background-color: #1C1C1C;
+    color: #f9f9f9;
+    padding: 10rem;
+    font-size: 5rem;
+    text-align: center;
+  }
